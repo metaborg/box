@@ -1,0 +1,16 @@
+module BoxPP.main
+
+imports BoxPP-Builders BoxPP-Colorer BoxPP-Completions BoxPP-Folding BoxPP-Outliner BoxPP-References BoxPP-Syntax
+
+language General properties
+                  
+  name          : BoxPP
+  id            : org.strategoxt.imp.editors.pp
+  extends       : Root
+                  
+  description   : "Spoofax/IMP-generated editor for the BoxPP language"
+  url           : http://strategoxt.org
+                  
+  extensions    : pp
+  table         : include/BoxPP.tbl
+  start symbols : PP-Table
