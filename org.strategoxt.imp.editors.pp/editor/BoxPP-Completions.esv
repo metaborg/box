@@ -10,11 +10,29 @@ completions
                                                                    
 
 completions
-                                         
-  // Syntax completion:                  
-  completion template                  : "module " <m> (blank)
-  completion template                  : "entity " <e> " {}" (blank)
-                                         
-  // Semantic (identifier) completion:   
-  completion proposer                  : editor-complete
-  completion trigger                   : ": "
+
+  completion trigger : "--\s+"
+
+  completion template : BOX = "H " "[" <> "]"
+
+  completion template : BOX = "V " "[" <> "]"
+
+  completion template : BOX = "HV " "[" <> "]"
+
+  completion template  : BOX = "A " "[" <> "]"
+
+  completion template  : BOX = "KW" "[\"" <keyword> "\"]"
+
+  completion template  : BOX = "_" <1>
+  
+  completion template : S-OPTION =
+		"hs=" <0>
+  
+  completion template : S-OPTION =
+    "vs=" <0>
+  
+  completion template : S-OPTION =
+    "is=" <0>
+  
+  completion template : PP-Entry = 
+    "," "\n\t" <Constructor> "--," 
