@@ -4,7 +4,6 @@
         
         <!-- Key input modules -->
         <property name="sdfmodule" value="BoxPP"/>
-        <property name="metasdfmodule" value="Stratego-BoxPP"/>
         <property name="esvmodule" value="BoxPP"/>
         <property name="strmodule" value="boxpp"/>
     
@@ -19,14 +18,13 @@
         
         <!-- Imports -->
         <property name="build.sdf.imports" value=""/>
-        <property name="build.stratego.args" value="
-                        --library
-                        -I &quot;${trans}&quot;
-                        -I &quot;${basedir}&quot;
+        <property name="build.stratego.args" value="--library
+                        -I &quot;${trans}&quot; -I &quot;${basedir}&quot;
                         -la stratego-lib -la stratego-sglr -la stratego-gpp -la stratego-xtc -la stratego-aterm"/>
         
-        <!-- External .def and .jar locations
         <property name="externaldef" location="syntax/${sdfmodule}.def"/>
+        
+        <!-- External .def and .jar locations
         <property name="externaljar" value="../lib.jar"/>
         <property name="externaljarflags" value="-la org.lib"/>
         -->
@@ -40,5 +38,5 @@
         <import file="build.generated.xml"/>
     
         <!-- Main target -->
-        <target name="all" depends="spoofaximp.default.ctree"/>
+        <target name="all" depends="spoofaximp.default"/>
     </project>
