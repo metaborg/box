@@ -8,6 +8,7 @@ imports
   lib/editor-common.generated
   check
   generate
+  refactor
 
 rules // Main editor interface (defined by editor/BoxPP-Builders and -References.esv)
   
@@ -36,6 +37,11 @@ rules // Main editor interface (defined by editor/BoxPP-Builders and -References
       filename := <guarantee-extension(|"aterm")> path;
       result   := selected // we just return the input term
   
+  
+  remove-duplicates: (selected, position, ast, path, project-path) -> (path, result)
+  	 with
+      filename := <guarantee-extension(|"test")> path;
+      result   := selected // we just return the input term
   // Resolves a reference when the user control-clicks or presses F3 in the editor.
   // Only succeeds for nodes of the form Type(_) for which GetEntity is defined.
   editor-resolve:
