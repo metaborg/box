@@ -1,9 +1,25 @@
 module BoxPP-Syntax
 
-imports BoxPP-Syntax.generated
+// imports BoxPP-Syntax.generated
 
 language
-                                                                   
-  // This file can be used for custom syntax rules.                
-  //                                                               
-  // See the imported file for a brief introduction and examples.  
+
+  // This file can be used for custom syntax rules.
+  //
+  // See the imported file for a brief introduction and examples.
+
+  // Comment constructs:
+  line comment                           : "%%"
+
+  // Fences (used for matching,
+  // inserting, indenting brackets):
+  fences                                 : [ ]
+                                           ( )
+                                           { }
+
+  // Automatic indent hints
+  // (indent after these tokens):
+  indent after                           : "--"
+
+  // Regular expression for identifiers:
+  identifier lexical                     : "[A-Za-z0-9_]+"

@@ -1,0 +1,16 @@
+module refactor
+
+imports
+  lib/refactor-common.generated
+  lib/editor-common.generated  
+  libstratego-lib
+
+rules
+	remove-duplicates-entries:
+    (newname, selected, position, ast, path, project-path) -> ([(selected, new-selected)], fatal-errors, errors, warnings)
+    with
+      <debug(!"ast: ")> ast;
+      new-selected  :=  <uniq>selected; 
+      errors := [];
+      warnings := [];
+      fatal-errors := []
