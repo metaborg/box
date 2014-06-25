@@ -14,8 +14,3 @@ builders
   provider                  : include/boxpp.ctree                                                              
               
   builder                   : "Show abstract syntax" = generate-aterm (openeditor) (realtime) (meta) (source)  
-  
-  refactoring PP-Entry*		: "Remove Duplicates"   = remove-duplicates-entries (source) 
-  
-  // builder					: "Remove Duplicates"   = remove-duplicates (source)                                                                                                          
-  // on save: generate-java                                                                                    

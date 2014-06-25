@@ -1,0 +1,13 @@
+module editor/BoxPP-Outliner
+
+imports
+  
+  include/BoxPP
+  lib/runtime/editor/outline-library
+  lib/runtime/editor/origins
+  editor/BoxPP-Outliner.generated
+
+rules
+  
+  to-outline-label = fail
+  
