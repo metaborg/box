@@ -4,6 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>org.strategoxt.imp.editors.pp</artifactId>
 	<packaging>eclipse-plugin</packaging>
+	<description>Spoofax meta-language for specifying pretty printers</description>
+	<url>https://github.com/metaborg/box</url>
 
 	<parent>
 		<groupId>org.metaborg</groupId>
@@ -11,4 +13,13 @@
 		<version>1.2.0-SNAPSHOT</version>
 		<relativePath>../../spoofax-deploy/org.metaborg.maven.parent.language</relativePath>
 	</parent>
+
+	<developers>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git@github.com:metaborg/box.git</connection>
+		<developerConnection>scm:git:git@github.com:metaborg/box.git</developerConnection>
+		<url>https://github.com/metaborg/box</url>
+	</scm>
 </project>
