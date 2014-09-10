@@ -66,9 +66,10 @@
     <target name="generate-sig">
         <available file="${lib-gen}/${sigmodule}.ctree" property="sig-lib.available" />
         <available file="${lib-gen}/${sigmodule}.str" property="sig-str.available" />
+        <available file="${signatures}/${sigmodule}.str" property="sig-module.available" />
         <!-- TODO: FIX RTG2SIG CALL TO SDF2TABLE AND -->
         <if> 
-            <isset property="sig.module.enabled"/>
+            <isset property="sig-module.available"/>
             <then>
                 <if> 
                     <not>
