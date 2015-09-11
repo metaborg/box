@@ -1,11 +1,11 @@
-module editor/BoxPP-Outliner
+module BoxPP-Outliner
 
 imports
   
-  include/BoxPP
-  lib/runtime/editor/outline-library
-  lib/runtime/editor/origins
-  editor/BoxPP-Outliner.generated
+  BoxPP
+  runtime/editor/outline-library
+  runtime/editor/origins
+  BoxPP-Outliner.generated
 
 rules
   
