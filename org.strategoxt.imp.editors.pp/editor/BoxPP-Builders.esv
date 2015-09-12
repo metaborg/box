@@ -11,6 +11,6 @@ builders
 
 builders
                                                                                                                
-  provider                  : include/boxpp.ctree                                                              
+  provider                  : include/boxpp.jar                                                              
               
   builder                   : "Show abstract syntax" = generate-aterm (openeditor) (realtime) (meta) (source)  
